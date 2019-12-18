@@ -1,6 +1,7 @@
 //var katzDeliLine = ['Bob', 'Ben', 'Edward'];
 
 function takeANumber(lineOfPeople, newName) {
+  lineOfPeople.push(newName);
   return `Welcome, ${newName}. You are number ${lineOfPeople.length + 1} in line.`;
 }
 
