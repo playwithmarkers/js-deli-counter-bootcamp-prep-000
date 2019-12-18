@@ -11,7 +11,7 @@ function nowServing(lineOfPeople) {
   if (lineOfPeople.length < 1) {
     return 'There is nobody waiting to be served!';
   } else {
-    return `Currently serving ${lineOfPeople.shift()}`;
+    return `Currently serving ${lineOfPeople.shift()}.`;
   }
 }
 
