@@ -20,11 +20,14 @@ function nowServing(lineOfPeople) {
 
 function currentLine(lineOfPeople) {
   if (lineOfPeople.length < 1) {
-    return 'The line is currently empty.';
+    return 'The line is currently empty.'
   } else {
     var line = '';
     for (let i = 0; i < lineOfPeople.length; i++) {
-      line = line + `${i + 1}. ${lineOfPeople[i]} `;
+      line = line + `${i + 1}. ${lineOfPeople[i]}`;
+      if (i < lineOfPeople.length - 1) {
+        line = line + ', ';
+      }
     }
     return `The line is currently: ${line}`;
   }
